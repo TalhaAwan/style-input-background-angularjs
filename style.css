@@ -1,0 +1,24 @@
+.bckg-container {
+  background-color: white;
+  height: 18px;
+  width: 170px;
+}
+
+.bckg {
+  height: 18px;
+  float: left;
+}
+
+.spaces {
+  background-color: lightblue
+}
+
+#inpt {
+  position: absolute ;
+  margin-top: -20px ;
+  background-color: transparent ;
+  width: 170px;
+  font-family: Arial;
+  line-height: 13px;
+  font-size: 12px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Add Leading & Trailing Spaces To Input Field Background With AngularJs">
+	<meta name="author" content="Talha Awan">
+
+	<title>Add Leading & Trailing Spaces To Input Field Background With AngularJs</title>
+
+
+	<link href="./style.css" rel="stylesheet">
+
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+	<script src="./app.js"></script>
+
+
+</head>
+
+<body>
+
+<h1> Add Leading & Trailing Spaces To Input Field Background With AngularJs </h1>
+
+
+	<div ng-app="inputFormatApp" ng-controller="InputFormatCtrl">
+		<div class="bckg-container">
+			<div class="bckg spaces" ng-style="input.leadingSpaces">
+			</div>
+			<div class="bckg" ng-style="input.middleContent">
+			</div>
+			<div class="bckg spaces" ng-style="input.trailingSpaces">
+			</div>
+			<br style="clear: left;" />
+		</div>
+		<input id="inpt" type="text" ng-model="input.text" ng-trim="false" placeholder="Add leading/trailing spaces" ng-change="inputChanged()" maxlength="20" />
+	</div>
+
+
+
+</body>
+
+</html>
